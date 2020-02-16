@@ -1,0 +1,37 @@
+<mat-card class="questions-form" *ngIf="_userResponsesService.userDetailsAvailable">
+
+    <mat-card-header>
+        <mat-card-title>Answer the following questions please</mat-card-title>
+        <div>
+            <button mat-button mat-stroked-button (click)="saveAnswers()" type="button">Save</button>
+        </div>
+    </mat-card-header>
+    <mat-card-content *ngIf="questionsLoaded">
+        <form [formGroup]="questionsFormGroup">
+            <mat-vertical-stepper #stepper linear formArrayName="questionsFormArray">
+                <mat-step formGroupName="{{i}}" [stepControl]="questionsFormArray.get([i])" *ngFor="let questionGroup of questionsList; let i = index" label="{{questionGroup.title}}">
+                    <div *ngFor="let question of questionGroup.questions; let qnum = index" class="question-row">
+                        <div class="question">{{question.que}}</div>
+                        <div class="options">
+                            <mat-radio-group formControlName="{{question.que}}" *ngIf="!question.allowMultiple">
+                                <mat-radio-button class="option-button" *ngFor="let option of question.options" value="{{option.val}}">{{option.lbl}}</mat-radio-button>
+                                <div class="filler"></div>
+                            </mat-radio-group>
+                            <div *ngIf="question.allowMultiple">
+                                <mat-checkbox [ngClass]="'chk-box'" *ngFor="let option of question.options" (change)="updateAnswerArray(i,question.que,option.val,$event.checked)">{{option.lbl}}</mat-checkbox>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="medical-alert-message" *ngIf="questionGroup.needsMedicalAdvice" >
+                        {{questionGroup.failPercent}}% - {{questionGroup.message}}
+                    </div>
+                    <div class="page-controls">
+                        <button *ngIf="i>0" mat-button mat-stroked-button matStepperPrevious type="button">&lt; Back</button>
+                        <div></div>
+                        <button *ngIf="i<questionsList.length" mat-button mat-stroked-button matStepperNext type="button" [disabled]="!questionsFormArray.get([i]).valid">Next &gt;</button>
+                    </div>
+                </mat-step>
+            </mat-vertical-stepper>
+        </form>
+    </mat-card-content>
+</mat-card>

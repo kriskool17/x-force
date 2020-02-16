@@ -1,0 +1,52 @@
+.questions-form {
+    margin: 0px 20px 30px 20px;
+}
+.mat-radio-button {
+    // display: block;
+    margin: 0px 10px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    margin: 5px 10px 5px 10px;
+}
+
+.col {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.question-row {
+    margin: 0px 0px 20px 0px;
+}
+
+.question {
+    display: block;
+    margin-right: 20px;
+}
+.options {
+    margin: 5px 20px 0px 0px;
+    .chk-box {
+        margin: 0px 10px;
+    }
+}
+
+.col:last-child {
+    margin-right: 0;
+}
+
+.page-controls {
+    margin: 10px 0px;
+    padding: 5px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.medical-alert-message {
+    font-size: larger;
+    font-weight: bolder;
+    color: red;
+    padding: 10px 50px 10px 0px;
+}
+

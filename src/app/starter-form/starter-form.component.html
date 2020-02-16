@@ -1,0 +1,43 @@
+<form [formGroup]="userDetailsForm">
+  <mat-card class="main-card">
+    <mat-card-header>
+      <mat-card-title>Some basic information please</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <div class="row">
+        <div class="col">
+          <mat-form-field class="full-width">
+            <input matInput placeholder="First name" formControlName="firstName" name="firstName" stype="text">
+            <mat-error *ngIf="userDetailsForm.controls['firstName'].hasError('required')">
+              First name is <strong>required</strong>
+            </mat-error>
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <mat-form-field class="full-width">
+            <input matInput placeholder="Last name" formControlName="lastName" name="lastName" type="text">
+            <mat-error *ngIf="userDetailsForm.controls['lastName'].hasError('required')">
+              Last name is <strong>required</strong>
+            </mat-error>
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <mat-form-field class="full-width">
+            <input matInput placeholder="email" formControlName="email" name="email" type="email">
+            <mat-error *ngIf="userDetailsForm.controls['email'].hasError('required')">
+              email is <strong>required</strong>
+            </mat-error>
+            <mat-error *ngIf="userDetailsForm.controls['email'].hasError('email')">
+              email is <strong>not valid</strong>
+            </mat-error>            
+          </mat-form-field>
+        </div>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</form>
+

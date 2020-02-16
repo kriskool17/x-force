@@ -1,0 +1,141 @@
+[
+    {
+        "title":"Milk related problems",
+        "_id": "QS001",
+        "message": "Looks like you have problems related to Milk Proteins or Lactose digestion. It is advisable to avoid taking milk and milk products rich in it. You are advised to go to a Genetic Counselor for further follow up on its probability of inheritance",
+        "medicalAdviceRule": "sentyFivePercentRule",
+        "questions":[
+            {"id":"1","que": "Do you have complaints of abdominal discomfort after drinking milk?", "options": [{"lbl":"Yes", "val":"yes"},{"lbl": "No", "val":"no"}], "allowMultiple": false , "fail":"yes"},
+            {"id":"2","que": "Do you get abdominal cramps at about 2-3 hours after ingesting milk or milk products like cheese?", "options": [{"lbl":"Yes", "val":"yes"},{"lbl": "No", "val":"no"}], "allowMultiple": false, "fail":"yes"},
+            {"id":"3","que": "Do you get loose stools at about three hours after drinking milk or milk products?", "options": [{"lbl":"Yes", "val":"yes"},{"lbl": "No", "val":"no"}], "allowMultiple": false, "fail":"yes"},
+            {"id":"4","que": "Do you have any discomfort after eating cheese related products", "options": [{"lbl":"Yes", "val":"yes"},{"lbl": "No", "val":"no"}], "allowMultiple": false, "fail":"yes"},
+            {"id":"5","que": "How much dairy products can you ingest before you develop symptoms", "options": [{"lbl":"1/4 cup", "val":1},{"lbl": "1/2 cup", "val":1},{"lbl": "3/4 cup", "val":1},{"lbl": "1 cup", "val":1},{"lbl": "None", "val":0},{"lbl": "More than one cup", "val":1}], "allowMultiple": false, "fail":"1"}
+        ]
+    },
+    {
+        "title":"Weight Related questions",
+        "_id": "QS002",
+        "message": "Looks like you need to be checked up a weight specialist or an endocrinologist to get proper treatment and care. It is also advised to go to a Genetic Counselor for further follow up if its due to gene defect.",
+        "medicalAdviceRule": "sentyFivePercentRule",
+        "questions":[
+            {"id":"1","que": "Do you snore at night?", "options": [{"lbl":"Yes", "val":"yes"},{"lbl": "No", "val":"no"}], "allowMultiple": false,"fail":"yes"},
+            {"id":"2","que": "Do you get tired after walking a short distance?", "options": [{"lbl":"Yes", "val":"yes"},{"lbl": "No", "val":"no"}], "allowMultiple": false, "fail":"yes"},
+            {"id":"3","que": "Do you have difficulty exercising?", "options": [{"lbl":"Yes", "val":"yes"},{"lbl": "No", "val":"no"}], "allowMultiple": false, "fail":"yes"},
+            {"id":"4","que": "Are you gaining weight in spite of consuming less food than when you were young?", "options": [{"lbl":"Yes", "val":"yes"},{"lbl": "No", "val":"no"}], "allowMultiple": false, "fail":"yes"},
+            {"id":"5","que": "Are you not losing weight even though you are working out same as before?", "options": [{"lbl":"Yes", "val":"yes"},{"lbl": "No", "val":"no"}], "allowMultiple": false, "fail":"yes"},
+            {"id":"6","que": "Were you overweight in childhood?", "options": [{"lbl":"Yes", "val":"yes"},{"lbl": "No", "val":"no"}], "allowMultiple": false, "fail":"yes"},
+            {"id":"7","que": "Do you have history of Hypertension or Diabetes?", "options": [{"lbl":"Yes", "val":"yes"},{"lbl": "No", "val":"no"}], "allowMultiple": false,"fail":"yes"}
+        ]
+    },
+    {
+        "title":"Depression Related Questions",
+        "_id": "QS003",
+        "message": "Looks like you need to be checked by a Psychiatrist and also get counseled by a Psychologist. It is also advisable to get evaluated by a Genetic Counselor of probability of inheriting the disease if your family members are affected by it.",
+        "medicalAdviceRule": "sentyFivePercentRule",
+        "questions":[
+            {"id":"1","que": "Do you feel down, depressed and hopeless?", "options": [{"lbl":"Yes", "val":"yes"},{"lbl": "No", "val":"no"}], "allowMultiple": false, "fail":"yes"},
+            {"id":"2","que": "Do you feel as if you have little or no energy?", "options": [{"lbl":"Yes", "val":"yes"},{"lbl": "No", "val":"no"}], "allowMultiple": false, "fail":"yes"},
+            {"id":"3","que": "Do you feel as if you have little or no pleasure in doing things?", "options": [{"lbl":"Yes", "val":"yes"},{"lbl": "No", "val":"no"}], "allowMultiple": false, "fail":"yes"},
+            {"id":"4","que": "Do you feel as if you have little or no pleasure in doing things?", "options": [{"lbl":"Yes", "val":"yes"},{"lbl": "No", "val":"no"}], "allowMultiple": false, "fail":"yes"},
+            {"id":"5","que": "Do you feel as if you are no use to the world?", "options": [{"lbl":"Yes", "val":"yes"},{"lbl": "No", "val":"no"}], "allowMultiple": false, "fail":"yes"},
+            {"id":"6","que": "Do you feel as if you are unable to function properly?", "options": [{"lbl":"Yes", "val":"yes"},{"lbl": "No", "val":"no"}], "allowMultiple": false, "fail":"yes"},
+            {"id":"7","que": "Do you sleep for less than 6 hrs/day?", "options": [{"lbl":"Yes", "val":"yes"},{"lbl": "No", "val":"no"}], "allowMultiple": false, "fail":"yes"},
+            {"id":"8","que": "Do you sleep for more than 10 hrs/day?", "options": [{"lbl":"Yes", "val":"yes"},{"lbl": "No", "val":"no"}], "allowMultiple": false, "fail":"yes"},
+            {"id":"9","que": "Do you feel as if you are going to hurt yourself?", "options": [{"lbl":"Yes", "val":"yes"},{"lbl": "No", "val":"no"}], "allowMultiple": false, "fail":"yes"},
+            {"id":"10","que": "Do you feel as if you are going to hurt others?", "options": [{"lbl":"Yes", "val":"yes"},{"lbl": "No", "val":"no"}], "allowMultiple": false, "fail":"yes"},
+            {"id":"11","que": "Are you unable to do normal daily activities?", "options": [{"lbl":"Yes", "val":"yes"},{"lbl": "No", "val":"no"}], "allowMultiple": false,"fail":"yes"}
+        ]
+    },
+    {
+        "title":"Attention Deficit Disorders",
+        "_id": "QS004",
+        "message": "Looks like you need to be evaluated by a Psychiatrist so that proper care and treatment can be given. It would be strongly advised to check up with a Genetic Counselor for probability of inheriting a defective gene.",
+        "medicalAdviceRule": "sentyFivePercentRule",
+        "questions":[
+            {"id":"1","que": "Do you have trouble focusing?", "options": [{"lbl":"Yes", "val":"yes"},{"lbl": "No", "val":"no"}], "allowMultiple": false, "fail":"yes"},
+            {"id":"2","que": "Do you have trouble keeping on task?", "options": [{"lbl":"Yes", "val":"yes"},{"lbl": "No", "val":"no"}], "allowMultiple": false, "fail":"yes"},
+            {"id":"3","que": "Do you have trouble doing things on time? ", "options": [{"lbl":"Yes", "val":"yes"},{"lbl": "No", "val":"no"}], "allowMultiple": false, "fail":"yes"},
+            {"id":"4","que": "Do you have trouble organizing things properly? ", "options": [{"lbl":"Yes", "val":"yes"},{"lbl": "No", "val":"no"}], "allowMultiple": false, "fail":"yes"},
+            {"id":"5","que": "Do you feel down and depressed? ", "options": [{"lbl":"Yes", "val":"yes"},{"lbl": "No", "val":"no"}], "allowMultiple": false, "fail":"yes"},
+            {"id":"6","que": "How do you feel about change ( moving, trying something new)?", "options": [{"lbl":"Open to it", "val":"open to it"},{"lbl": "Not open to it", "val":"not open to it"}], "allowMultiple": false, "fail":"not open to it"}
+        ]
+    },
+    {
+        "title":"Sugar related disorders",
+        "_id": "QS005",
+        "message": "Looks like you need to be checked by an endocrinologist and a Genetic Counselor to check for any gene involved so that you can get proper treatment and care",
+        "medicalAdviceRule": "sentyFivePercentRule",
+        "questions":[
+            {"id":"1","que": "Do you have history of fainting attacks?", "options": [{"lbl":"Yes", "val":"yes"},{"lbl": "No", "val":"no"}], "allowMultiple": false, "fail":"yes"},
+            {"id":"2","que": "Do you take insulin before consuming food?", "options": [{"lbl":"Yes", "val":"yes"},{"lbl": "No", "val":"no"}], "allowMultiple": false, "fail":"yes"},
+            {"id":"3","que": "Are you careful about weight gain?", "options": [{"lbl":"Yes", "val":"yes"},{"lbl": "No", "val":"no"}], "allowMultiple": false, "fail":"yes"},
+            {"id":"4","que": "Have you taking insulin since childhood?", "options": [{"lbl":"Yes", "val":"yes"},{"lbl": "No", "val":"no"}], "allowMultiple": false, "fail":"yes"}
+        ]
+    },
+    {
+        "title":"Headaches",
+        "_id": "QS006",
+        "message": "Looks like you need to be checked by a neuro-physician and discuss about further care and treatment. You can also do a genet study with a Genetic Counselor if there is anyone in your family with headaches.",
+        "medicalAdviceRule": "sentyFivePercentRule",
+        "questions":[
+            {"id":"1","que": "Do you get headaches often?", "options": [{"lbl":"Yes", "val":"yes"},{"lbl": "No", "val":"no"}], "allowMultiple": false, "fail":"yes"},
+            {"id":"2","que": "Do you get headaches if you go outside in Sun?", "options": [{"lbl":"Yes", "val":"yes"},{"lbl": "No", "val":"no"}], "allowMultiple": false, "fail":"yes"},
+            {"id":"3","que": "Do you get flashes of light or blind spot before you get headache?", "options": [{"lbl":"Yes", "val":"yes"},{"lbl": "No", "val":"no"}], "allowMultiple": false, "fail":"yes"},
+            {"id":"4","que": "Do you get flashes of light or blind spot after you get headache?", "options": [{"lbl":"Yes", "val":"yes"},{"lbl": "No", "val":"no"}], "allowMultiple": false, "fail":"yes"},
+            {"id":"5","que": "Do you have tingling of arm or leg or one side of face?", "options": [{"lbl":"Yes", "val":"yes"},{"lbl": "No", "val":"no"}], "allowMultiple": false, "fail":"yes"},
+            {"id":"6","que": "Is the headaches on one side?", "options": [{"lbl":"Yes", "val":"yes"},{"lbl": "No", "val":"no"}, { "lbl": "I don’t get headaches", "val": "i don’t get headaches"}], "allowMultiple": false, "fail":"yes"},
+            {"id":"7","que": "Do it worsen with time and always needs medications?", "options": [{"lbl":"Yes", "val":"yes"},{"lbl": "No", "val":"no"}], "allowMultiple": false, "fail":"yes"}
+        ]
+    },
+    {
+        "title":"Gastrointestinal diseases",
+        "_id": "QS007",
+        "message": "Looks like you need to be checked by a Gastrointestinal physician to get further evaluated of the type of disease. You can also check with Genetic Counselor if the gene causing this disease has been inherited.",
+        "medicalAdviceRule": "sentyFivePercentRule",
+        "questions":[
+            {"id":"1","que": "Do you have abdominal pain after taking food?", "options": [{"lbl":"Yes", "val":"yes"},{"lbl": "No", "val":"no"}], "allowMultiple": false, "fail":"yes"},
+            {"id":"2","que": "Do you have abdominal pain throughout the day?", "options": [{"lbl":"Yes", "val":"yes"},{"lbl": "No", "val":"no"}], "allowMultiple": false, "fail":"yes"},
+            {"id":"3","que": "Do you have loose stools?", "options": [{"lbl":"Yes", "val":"yes"},{"lbl": "No", "val":"no"}], "allowMultiple": false, "fail":"yes"},
+            {"id":"4","que": "Do you defecate multiple times a day?", "options": [{"lbl":"Yes", "val":"yes"},{"lbl": "No", "val":"no"}], "allowMultiple": false, "fail":"yes"},
+            {"id":"5","que": "Do you have loss of weight?", "options": [{"lbl":"Yes", "val":"yes"},{"lbl": "No", "val":"no"}], "allowMultiple": false, "fail":"yes"},
+            {"id":"6","que": "Do you pass blood in stool?", "options": [{"lbl":"Yes", "val":"yes"},{"lbl": "No", "val":"no"}], "allowMultiple": false, "fail":"yes"}
+        ]
+    },
+    {
+        "title":"Bone related diseases",
+        "_id": "QS008",
+        "message": "Looks like you may need Calcium Supplement and other meds to supplement deficiencies in bone and has to be evaluated by an endocrinologist to prevent further worsening of symptoms.",
+        "medicalAdviceRule": "sentyFivePercentRule",
+        "questions":[
+            {"id":"1","que": "How much milk do you drink? (How many times a day)", "options": [{"lbl":"1/2 cup", "val":1},{"lbl":"1 cup", "val":1},{"lbl":"More than 1 cup", "val":1}, {"lbl": "None", "val":0}], "allowMultiple": false, "fail":1},
+            {"id":"2","que": "Do you take calcium supplements?", "options": [{"lbl":"Yes", "val":"yes"},{"lbl": "No", "val":"no"}], "allowMultiple": false, "fail":"yes"},
+            {"id":"3","que": "Do you have history of frequent falls?", "options": [{"lbl":"Yes", "val":"yes"},{"lbl": "No", "val":"no"}], "allowMultiple": false, "fail":"yes"},
+            {"id":"4","que": "Do you have history of frequent fractures?", "options": [{"lbl":"Yes", "val":"yes"},{"lbl": "No", "val":"no"}], "allowMultiple": false, "fail":"yes"}
+        ]
+    },
+    {
+        "title":"Joint Related Diseases",
+        "_id": "QS009",
+        "message": "Looks like you may need to be checked by Rheumatologist for further evaluation and proper treatment. You may even check with a Genetic Counselor for a defective gene.",
+        "medicalAdviceRule": "sentyFivePercentRule",
+        "questions":[
+            {"id":"1","que": "Do you have redness around the joints?", "options": [{"lbl":"Yes", "val":"yes"},{"lbl": "No", "val":"no"}], "allowMultiple": false, "fail":"yes"},
+            {"id":"2","que": "Do you have swelling around the joints? ", "options": [{"lbl":"Yes", "val":"yes"},{"lbl": "No", "val":"no"}], "allowMultiple": false, "fail":"yes"},
+            {"id":"3","que": "Do you have pain around the joints?", "options": [{"lbl":"Yes", "val":"yes"},{"lbl": "No", "val":"no"}], "allowMultiple": false, "fail":"yes"},
+            {"id":"4","que": "Do you have difficulty moving the joints?", "options": [{"lbl":"Yes", "val":"yes"},{"lbl": "No", "val":"no"}], "allowMultiple": false, "fail":"yes"},
+            {"id":"5","que": "When do you have pain?", "options": [{"lbl":"Morning", "val":1},{"lbl":"Night", "val":1},{"lbl": "Never", "val":0}], "allowMultiple": true, "fail":"1"}
+        ]
+    },
+    {
+        "title":"Other Family History",
+        "_id": "QS010",
+        "message": "",
+        "questions":[
+            {"id":"1","que": "When did you get these symptoms?", "options": [{"lbl":"0-18", "val":"0-18"},{"lbl":"19-25", "val":"19-25"},{"lbl":"26-40", "val":"26-40"},{"lbl":"40 and above", "val":"40 and above"},{"lbl": "I don't have a disease", "val":""}], "allowMultiple": false},
+            {"id":"2","que": "Did you have kids before or after the onset of the symptoms?", "options": [{"lbl":"Before", "val":"before"},{"lbl": "After", "val":"after"},{"lbl": "N/A", "val":"N/A"}], "allowMultiple": false},
+            {"id":"3","que": "Gender", "options": [{"lbl":"Male", "val":"male"},{"lbl": "Female", "val":"female"},{"lbl":"Prefer not to disclose", "val":"prefer not to disclose"}], "allowMultiple": false},
+            {"id":"4","que": "Any member of family affected by the same symptoms?", "options": [{"lbl":"Mother", "val":"Mother"},{"lbl":"Father", "val":"Father"},{"lbl":"Maternal Grandmother", "val":"Maternal Grandmother"},{"lbl":"Maternal Grandfather", "val":"Maternal Grandfather"},{"lbl":"Paternal Grandmother", "val":"Paternal Grandmother"},{"lbl":"Paternal Grandfather", "val":"Paternal Grandfather"},{"lbl":"Brother", "val":"Brother"},{"lbl":"Sister", "val":"Sister"},{"lbl":"Other", "val":"Other"},{"lbl":"None", "val":"None"}], "allowMultiple": true}
+        ]
+    }
+
+]
